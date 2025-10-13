@@ -147,11 +147,17 @@ function get_default_ip() {
     return 1
 }
 
+function get_architecture() {
+    case $(uname -m) in
+        arm*|aarch64) echo "arm" ;;
+        *) echo "x86" ;;
+    esac
+}
 
 function main() {
     info "*********** Register baremetal start ... ************"
 
-    CUR_DIR=$(dirname $(readlink -f "$0"))
+    CUR_DIR=$(dirname $(readlink -f "$0"))/$(get_architecture)
 
     requires_root
     # prepare_rootfs
