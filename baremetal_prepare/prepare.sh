@@ -149,8 +149,8 @@ function get_default_ip() {
 
 function get_architecture() {
     case $(uname -m) in
-        arm*|aarch64) echo "arm" ;;
-        *) echo "x86" ;;
+        arm*|aarch64) echo "aarch64" ;;
+        *) echo "x86_64" ;;
     esac
 }
 
