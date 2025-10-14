@@ -44,6 +44,7 @@ if [ ! -d "$X86_ROOTFS" ]; then
     exit 1
 fi
 
+out_baremetal_prepare_d="$OUTPUT_DIR/baremetal_prepare"
 DEST_ARM_ROOTFS_DIR="$OUTPUT_DIR/baremetal_prepare/aarch64/"
 mkdir -p $DEST_ARM_ROOTFS_DIR || fail "failed to make arm rootfs dir"
 cp -rf $ARM_ROOTFS $DEST_ARM_ROOTFS_DIR
