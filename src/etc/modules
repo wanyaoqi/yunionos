@@ -88,5 +88,10 @@ mlx4_en
 mlx5_core
 mlxfw
 
-# devicemap & lvm
+# devicemap & lvm & md
 dm-mod
+md-mod
+raid0
+raid10
+raid1
+raid456
