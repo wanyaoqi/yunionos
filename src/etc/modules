@@ -66,6 +66,7 @@ fuse
 aacraid
 smartpqi
 bnxt_en
+vmd
 
 # hisilicon
 hip04_eth
